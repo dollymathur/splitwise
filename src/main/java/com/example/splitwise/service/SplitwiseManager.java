@@ -31,6 +31,11 @@ public class SplitwiseManager {
     }
 
     public void showBalanceSheet() {
+
+        if (splitwise.getBalanceSheet().getBalances().isEmpty()) {
+            System.out.println("No balances");
+        }
+
         for (Balance balance : splitwise.getBalanceSheet().getBalances()) {
             if (balance.getPaidBy() == balance.getPaidTo()) {
                 continue;
@@ -41,6 +46,11 @@ public class SplitwiseManager {
     }
 
     public void showUserBalance(User user) {
+
+        if (splitwise.getBalanceSheet().getBalances().isEmpty()) {
+            System.out.println("No balances");
+        }
+
         for (Balance balance : splitwise.getBalanceSheet().getBalances()) {
             if (balance.getPaidBy() == balance.getPaidTo()) {
                 continue;

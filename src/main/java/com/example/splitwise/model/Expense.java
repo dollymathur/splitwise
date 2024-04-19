@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Expense {
     int id;
-    int amount;
+    Double amount;
     User paidBy;
     List<User> paidTo;
     SplitType splitType;
-    HashMap<User, Integer> share;
+    HashMap<User, Double> share;
 
-    public Expense(int id, int amount, User paidBy, List<User> paidTo, SplitType splitType, HashMap<User, Integer> share) {
+    public Expense(int id, Double amount, User paidBy, List<User> paidTo, SplitType splitType, HashMap<User, Double> share) {
         this.id = id;
         this.amount = amount;
         this.paidBy = paidBy;
@@ -28,11 +28,11 @@ public class Expense {
         this.id = id;
     }
 
-    public int getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
@@ -60,11 +60,11 @@ public class Expense {
         this.splitType = splitType;
     }
 
-    public HashMap<User, Integer> getShare() {
+    public HashMap<User, Double> getShare() {
         return share;
     }
 
-    public void setShare(HashMap<User, Integer> share) {
+    public void setShare(HashMap<User, Double> share) {
         this.share = share;
     }
 }

@@ -16,20 +16,20 @@ public class ExactSplitService extends SplitService {
 
     @Override
     public Boolean validate() {
-        int sum = 0;
+        Double sum = (double) 0;
 
-        for (Map.Entry<User, Integer> mapElement : expense.getShare().entrySet()) {
+        for (Map.Entry<User, Double> mapElement : expense.getShare().entrySet()) {
             sum += mapElement.getValue();
         }
 
-        return sum == expense.getAmount();
+        return sum.equals(expense.getAmount());
     }
 
     @Override
     public List<Balance> calculateSplit() {
         List<Balance> balances = new ArrayList<>();
 
-        for (Map.Entry<User, Integer> mapElement : expense.getShare().entrySet()) {
+        for (Map.Entry<User, Double> mapElement : expense.getShare().entrySet()) {
             balances.add(new Balance(expense.getPaidBy(), mapElement.getKey(),
                     (double) mapElement.getValue()));
         }
