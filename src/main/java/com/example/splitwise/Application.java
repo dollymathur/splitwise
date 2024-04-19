@@ -14,6 +14,7 @@ public class Application {
         // Question - https://workat.tech/machine-coding/practice/splitwise-problem-0kp2yneec2q2
         // Solution - https://workat.tech/machine-coding/editorial/how-to-design-splitwise-machine-coding-ayvnfo1tfst6
 
+        // custom input
         /*SHOW
         SHOW 1
         EXPENSE 1 1000 4 1 2 3 4 EQUAL
