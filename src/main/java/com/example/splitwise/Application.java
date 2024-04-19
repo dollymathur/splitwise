@@ -11,6 +11,9 @@ public class Application {
     static SplitwiseManager splitwiseManager;
 
     public static void main(String[] args) {
+        // Question - https://workat.tech/machine-coding/practice/splitwise-problem-0kp2yneec2q2
+        // Solution - https://workat.tech/machine-coding/editorial/how-to-design-splitwise-machine-coding-ayvnfo1tfst6
+
         /*SHOW
         SHOW 1
         EXPENSE 1 1000 4 1 2 3 4 EQUAL
